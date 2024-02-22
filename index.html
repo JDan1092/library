@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Library App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Add a book!</h1>
+        </div>
+        <div class="books-heading">
+            <h2>Current books</h2>
+        </div>
+        <div class="form">
+            <button class="add-button">Add new book</button>
+            <div id="add-form" style="display: none;">
+                <form id="add-book">
+                    <label for="Title">Title:</label>
+                    <input type="text" id="Title" name="Title">
+                    <label for="Author">Author:</label>
+                    <input type="text" id="Author" name="Author">
+                    <label for="Pages">Pages:</label>
+                    <input type="text" id="Pages" name="Pages">
+                    <label for="Read">Read:</label>
+                    <select name="Read" id="Read">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </form>
+                <button type="submit" class="submit-button">Submit to Library</button>
+                <button type="reset" class="reset-button">Reset Form</button>
+            </div>
+        </div>
+        <div class="books"></div>
+    </div>
+</body>
+</html>
